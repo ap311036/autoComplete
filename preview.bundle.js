@@ -1418,22 +1418,22 @@ var Preview = function (_Component) {
                     footer: true,
                     rules: [{
                         title: '城市',
-                        icon: 'icon'
+                        icon: _react2.default.createElement('i', { className: 'far fa-building' })
                     }, {
                         title: '區域',
-                        icon: 'icon'
+                        icon: _react2.default.createElement('i', { className: 'fas fa-flag' })
                     }, {
                         title: '行政區',
-                        icon: 'icon'
+                        icon: _react2.default.createElement('i', { className: 'fas fa-flag' })
                     }, {
                         title: '商圈',
-                        icon: 'icon'
+                        icon: _react2.default.createElement('i', { className: 'fas fa-map-marked-alt' })
                     }, {
                         title: '地標',
-                        icon: 'icon'
+                        icon: _react2.default.createElement('i', { className: 'fas fa-map-pin' })
                     }, {
                         title: '飯店',
-                        icon: 'icon'
+                        icon: _react2.default.createElement('i', { className: 'fas fa-hotel' })
                     }]
                 })
             );
@@ -1706,7 +1706,7 @@ var Module = function (_Component) {
                                         className: (0, _classnames2.default)('item', _this4.props.itemClass, {
                                             select: _this4.state.select === items.dataIndex
                                         }),
-                                        key: items.level3,
+                                        key: items.level3 + Math.random(),
                                         dangerouslySetInnerHTML: { __html: items.Newtxt },
                                         onClick: function onClick() {
                                             _this4._itemOnClickHandler(items);
@@ -20524,7 +20524,7 @@ exports = module.exports = __webpack_require__(12)(false);
 
 
 // module
-exports.push([module.i, "/**\r\n * Import core mixins, variables, or others\r\n */\n/**\r\n * Define your classname\r\n */\n/*\r\n * Start your css code\r\n */\n.act_rajx {\n  font-family: Verdana, Arial, \"\\5FAE\\8EDF\\6B63\\9ED1\\9AD4\", \"Microsoft JhengHei\", \"\\5FAE\\8EDF\\96C5\\9ED1\\9AD4\", \"Microsoft YaHei\";\n  line-height: 1.5;\n  color: #444;\n  display: block;\n  border: 1px solid #bbb;\n  background: #fff;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);\n  position: absolute;\n  font-size: 12px;\n  padding: 0 10px 5px;\n  max-height: 390px;\n  z-index: 10; }\n  .act_rajx input:focus {\n    outline: none; }\n  .act_rajx.dno {\n    display: none; }\n  .act_rajx .m-place,\n  .act_rajx .noMatchText {\n    color: #999;\n    padding: 5px 20px 0 10px; }\n    .act_rajx .m-place .close,\n    .act_rajx .noMatchText .close {\n      position: absolute;\n      right: -1px;\n      top: -1px;\n      border: 1px solid #bbb;\n      background-color: #fff;\n      background-image: none;\n      padding: 1px 2px;\n      font-size: 15px;\n      line-height: 15px;\n      font-weight: 700; }\n  .act_rajx.overflowAuto {\n    overflow-x: hidden; }\n  .act_rajx .foot {\n    display: block;\n    text-align: center;\n    padding: 5px;\n    background: #f2f0e4;\n    margin: 0;\n    color: #0077b3;\n    cursor: pointer; }\n    @media (min-width: 980px) {\n      .act_rajx .foot {\n        margin: 0 -10px -5px; } }\n    .act_rajx .foot:after {\n      display: inline-block;\n      margin-left: 5px;\n      content: \"\";\n      width: 0;\n      height: 0;\n      border-style: solid;\n      border-width: 5px 0 5px 5px;\n      border-color: transparent transparent transparent #0076b3; }\n  .act_rajx .section {\n    display: block;\n    color: #999;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    display: block; }\n    .act_rajx .section:first-child .title {\n      border-top: none; }\n    .act_rajx .section .title {\n      display: block;\n      font-style: normal;\n      padding: 9px 8px 10px;\n      color: #999;\n      border-top: 1px dashed #ddd;\n      font-size: 12px; }\n    .act_rajx .section .item {\n      display: block;\n      color: black;\n      padding: 5px 8px;\n      color: #444;\n      line-height: 1.25;\n      font-size: 12px;\n      -webkit-user-select: none;\n         -moz-user-select: none;\n          -ms-user-select: none;\n              user-select: none;\n      cursor: pointer; }\n      .act_rajx .section .item .red {\n        color: red; }\n      .act_rajx .section .item.select {\n        background-color: #ff625d;\n        color: #fff;\n        font-weight: 700; }\n        .act_rajx .section .item.select .red {\n          color: white; }\n      .act_rajx .section .item:hover:not(.select) {\n        background-color: #ff625d;\n        color: #fff; }\n        .act_rajx .section .item:hover:not(.select) .red {\n          color: white; }\n", ""]);
+exports.push([module.i, "/**\r\n * Import core mixins, variables, or others\r\n */\n/**\r\n * Define your classname\r\n */\n/*\r\n * Start your css code\r\n */\n.act_rajx {\n  font-family: Verdana, Arial, \"\\5FAE\\8EDF\\6B63\\9ED1\\9AD4\", \"Microsoft JhengHei\", \"\\5FAE\\8EDF\\96C5\\9ED1\\9AD4\", \"Microsoft YaHei\";\n  line-height: 1.5;\n  color: #444;\n  display: block;\n  border: 1px solid #bbb;\n  background: #fff;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);\n  position: absolute;\n  font-size: 12px;\n  padding: 0 10px 5px;\n  max-height: 390px;\n  z-index: 10;\n  overflow-y: auto;\n  overflow-x: hidden; }\n  .act_rajx input:focus {\n    outline: none; }\n  .act_rajx.dno {\n    display: none; }\n  .act_rajx .m-place,\n  .act_rajx .noMatchText {\n    color: #999;\n    padding: 5px 20px 0 10px; }\n    .act_rajx .m-place .close,\n    .act_rajx .noMatchText .close {\n      position: absolute;\n      right: -1px;\n      top: -1px;\n      border: 1px solid #bbb;\n      background-color: #fff;\n      background-image: none;\n      padding: 1px 2px;\n      font-size: 15px;\n      line-height: 15px;\n      font-weight: 700; }\n  .act_rajx.overflowAuto {\n    overflow-x: hidden; }\n  .act_rajx .foot {\n    display: block;\n    text-align: center;\n    padding: 5px;\n    background: #f2f0e4;\n    margin: 0;\n    color: #0077b3;\n    cursor: pointer; }\n    @media (min-width: 980px) {\n      .act_rajx .foot {\n        margin: 0 -10px -5px; } }\n    .act_rajx .foot:after {\n      display: inline-block;\n      margin-left: 5px;\n      content: \"\";\n      width: 0;\n      height: 0;\n      border-style: solid;\n      border-width: 5px 0 5px 5px;\n      border-color: transparent transparent transparent #0076b3; }\n  .act_rajx .section {\n    display: block;\n    color: #999;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    display: block; }\n    .act_rajx .section:first-child .title {\n      border-top: none; }\n    .act_rajx .section .title {\n      display: block;\n      font-style: normal;\n      padding: 9px 8px 10px;\n      color: #999;\n      border-top: 1px dashed #ddd;\n      font-size: 12px; }\n    .act_rajx .section .item {\n      display: block;\n      color: black;\n      padding: 5px 8px;\n      color: #444;\n      line-height: 1.25;\n      font-size: 12px;\n      -webkit-user-select: none;\n         -moz-user-select: none;\n          -ms-user-select: none;\n              user-select: none;\n      cursor: pointer; }\n      .act_rajx .section .item .red {\n        color: red; }\n      .act_rajx .section .item.select {\n        background-color: #ff625d;\n        color: #fff;\n        font-weight: 700; }\n        .act_rajx .section .item.select .red {\n          color: white; }\n      .act_rajx .section .item:hover:not(.select) {\n        background-color: #ff625d;\n        color: #fff; }\n        .act_rajx .section .item:hover:not(.select) .red {\n          color: white; }\n", ""]);
 
 // exports
 exports.locals = {
