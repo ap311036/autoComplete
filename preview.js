@@ -107,7 +107,7 @@ class Preview extends Component {
                     closeBtnOnClick={() => this.setState({ show: false })}
                     getItemClickValue={(v) => this.setState({ selectText: v.txt })}
                     isFocus={this.state.isFocus}
-                    showText={this.state.showText}
+                    showText={''}
                     noMatchText="很抱歉，找不到符合的項目"
                     minimumStringQuery={'請至少輸入兩個字'}
                     minimumStringQueryLength={2}

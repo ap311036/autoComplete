@@ -1411,7 +1411,7 @@ var Preview = function (_Component) {
                         return _this3.setState({ selectText: v.txt });
                     },
                     isFocus: this.state.isFocus,
-                    showText: this.state.showText,
+                    showText: '',
                     noMatchText: '\u5F88\u62B1\u6B49\uFF0C\u627E\u4E0D\u5230\u7B26\u5408\u7684\u9805\u76EE',
                     minimumStringQuery: '請至少輸入兩個字',
                     minimumStringQueryLength: 2,
