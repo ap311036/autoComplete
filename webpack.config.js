@@ -66,7 +66,6 @@ module.exports = {
         ]
     },
     devServer: {
-        host: 'snoop.liontravel.com',
         contentBase: path.join(__dirname, './'),
         compress: false,
         openPage: 'preview.html',
