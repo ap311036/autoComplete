@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ActRajax from './index.js';
 import SearchInput from './components/SearchInput';
-import IcRcln from '../ic_rcln/components/Module';
+// import IcRcln from '../ic_rcln/components/Module';
 import '../core/core.scss';
 class Preview extends Component {
     constructor (props) {
@@ -41,7 +41,7 @@ class Preview extends Component {
         // let encodedValue = encodeURI(value);
         // url.searchParams.append('KeyWord', encodedValue);
 
-        let url = 'https://uhotel.liontravel.com/search/keyword?KeyWord=' + value;
+        let url = 'https://tun-hsiang.000webhostapp.com/ajax.php?keyWord=' + value;
         // console.log(url)
         fetch(url, {
             method: 'GET',
@@ -116,27 +116,27 @@ class Preview extends Component {
                         [
                             {
                                 title: '城市',
-                                icon: <IcRcln name="toolmapf" key={1} />
+                                icon: <i className="far fa-building"></i>
                             },
                             {
                                 title: '區域',
-                                icon: <IcRcln name="traffictrafficcruiseshipf" key={2} />
+                                icon: <i className="fas fa-flag"></i>
                             },
                             {
                                 title: '行政區',
-                                icon: <IcRcln name="hotelbusinesscen" key={3} />
+                                icon: <i className="fas fa-flag"></i>
                             },
                             {
                                 title: '商圈',
-                                icon: <IcRcln name="productpricef" key={4} />
+                                icon: <i className="fas fa-map-marked-alt"></i>
                             },
                             {
                                 title: '地標',
-                                icon: <IcRcln name="hotelwify" key={5} />
+                                icon: <i className="fas fa-map-pin"></i>
                             },
                             {
                                 title: '飯店',
-                                icon: <IcRcln name="hotelforeignBookingf" key={6} />
+                                icon: <i className="fas fa-hotel"></i>
                             }
                         ]
                     }

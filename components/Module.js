@@ -137,7 +137,7 @@ export default class Module extends Component {
                                                             className={cx('item', this.props.itemClass, {
                                                                 select: this.state.select === items.dataIndex
                                                             })}
-                                                            key={items.level3}
+                                                            key={items.level3 + Math.random()}
                                                             dangerouslySetInnerHTML={{ __html: items.Newtxt }}
                                                             onClick={
                                                                 () => {

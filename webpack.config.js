@@ -66,10 +66,9 @@ module.exports = {
         ]
     },
     devServer: {
-        host: 'snoop.liontravel.com',
         contentBase: path.join(__dirname, './'),
         compress: false,
-        openPage: 'preview.html',
+        openPage: 'index.html',
         port: 9000
     },
     devtool: process.env.NODE_ENV === 'develop' ? 'source-map' : '',
@@ -77,8 +76,8 @@ module.exports = {
         let defaultPlugins = [
             new HtmlWebpackPlugin({
                 inject: true,
-                template: './template.html',
-                filename: './preview.html'
+                template: './index.html',
+                filename: './index.html'
             }),
             new HtmlWebpackExternalsPlugin({
                 externals: [
