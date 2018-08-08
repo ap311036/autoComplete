@@ -1323,7 +1323,7 @@ var Preview = function (_Component) {
             // let encodedValue = encodeURI(value);
             // url.searchParams.append('KeyWord', encodedValue);
 
-            var url = 'https://ap311036.github.io/autoComplete/ajax.php?KeyWord=' + value;
+            var url = 'https://tun-hsiang.000webhostapp.com/ajax.php?keyWord=' + value;
             // console.log(url)
             fetch(url, {
                 method: 'GET',
